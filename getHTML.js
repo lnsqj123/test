@@ -20,11 +20,7 @@ getHtml()
     $bodyList.each(function(i, elem) {
       ulList[i] = {
           title: $(this).find('strong.tit-news').text(),
-          url: $(this).find('strong.tit-news').attr('href'),
-          image_url: $(this).find('p.poto a img').attr('src'),
-          image_alt: $(this).find('p.poto a img').attr('alt'),
           summary: $(this).find('p.lead').text().slice(0, -11),
-          date: $(this).find('span.p-time').text()
       };
     });
 
